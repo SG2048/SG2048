@@ -25,11 +25,6 @@ var numberpersecond = () => (autoclickerlevel > 0) ? (constants.automult ** (aut
 document.addEventListener("keydown", cheatfunction)
 
 
-function cheatfunction(e) {
-    console.log("you pressed a key, which is " + (10**((Number(e.key)**2)*2)))
-    currency =  (10**((Number(e.key)**2)*2))
-}
-
 currency = currency + ((numberpersecond()) * ((new Date().valueOf()) - Number((localStorage.getItem("storedtime"))))) / 3000
 display()
 
